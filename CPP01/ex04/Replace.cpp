@@ -44,9 +44,9 @@ void File::replace(std::string s1, std::string s2)
 		int start = 0;
 		std::cout << "text: " << text << std::endl;
 		std::cerr << "SOME TEXT HERE " << new_file << std::endl;
-		while (start + s1.length() <= text.length())
+		while (text[start] != '\0')
 		{
-			if (text.substr(start, s1.length()) == s1)
+			if (text.substr(start, s1.length()) == s1 && start + s1.length() <= text.length())
 			{
 				new_text += s2;
 				start += s1.length();

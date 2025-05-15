@@ -58,7 +58,7 @@ void Harl::complain(std::string level)
 			(this->*complain[3])();
 			break;
 		default:
-			std::cout << "Error: gotta be info,warning,error or debug." << std::endl;
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 			break;
 	}
 }
