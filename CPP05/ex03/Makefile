@@ -1,7 +1,7 @@
-NAME = ScavTrap
+NAME = Bureaucrat
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -g -std=c++98
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS = main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp Intern.cpp
 	
 OBJS = $(SRCS:.cpp=.o)
 

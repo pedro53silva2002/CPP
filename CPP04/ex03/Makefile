@@ -1,7 +1,7 @@
-NAME = ScavTrap
+NAME = Abstract
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -g -std=c++98
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS = main.cpp AMateria.cpp Cure.cpp Ice.cpp ICharacter.cpp Character.cpp MateriaSource.cpp IMateriaSource.cpp
 	
 OBJS = $(SRCS:.cpp=.o)
 
