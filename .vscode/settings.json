@@ -59,6 +59,9 @@
     "typeinfo": "cpp",
     "variant": "cpp",
     "fstream": "cpp",
-    "csignal": "cpp"
+    "csignal": "cpp",
+    "*.tpp": "cpp",
+    "climits": "cpp",
+    "list": "cpp"
   }
 }
