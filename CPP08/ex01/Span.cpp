@@ -55,12 +55,12 @@ Span::~Span()
 
 int Span::shortestSpan() const
 {
-	int shortestSpan;
+	int shortestSpan = 0;
 	//std::cout << "SIZE: " << _size << std::endl;
 	if (_size <= 1) {
 		throw std::logic_error("Not enough elements to find the shortest span");
 	}
-	for (int i = 0; i < _size; i++)
+	for (int i = 0; i < _size - 1; i++)
 	{
 		int temp = _data[i] - _data[i + 1];
 		if (temp < 0) {
@@ -82,12 +82,12 @@ int Span::shortestSpan() const
 
 int Span::longestSpan() const
 {
-	int longestSpan;
+	int longestSpan = 0;
 	//std::cout << "SIZE: " << _size << std::endl;
 	if (_size <= 1) {
 		throw std::logic_error("Not enough elements to find the longest span");
 	}
-	for (int i = 0; i < _size; i++)
+	for (int i = 0; i < _size - 1; i++)
 	{
 		int temp = _data[i] - _data[i + 1];
 		if (temp < 0) {

@@ -1,6 +1,6 @@
 #include "Mutant.hpp"
 
-/* int main()
+int main()
 {
     MutantStack<int> mstack;
     mstack.push(5);
@@ -28,10 +28,10 @@
     }
     std::stack<int> s(mstack);
     return 0;
-} */
+}
 
 
-int main()
+/* int main()
 {
     std::list<int> mstack;
     mstack.push_back(5);
@@ -44,8 +44,8 @@ int main()
     mstack.push_back(737);
     //[...]
     mstack.push_back(0);
-    std::list<int> it = mstack.cbegin();
-    std::list<int> ite = mstack.cend();
+    std::list<int>::iterator it = mstack.begin();
+    std::list<int>::iterator ite = mstack.end();
     ++it;
     --it;
     if (it == ite)
@@ -57,6 +57,6 @@ int main()
         std::cout << *it << std::endl;
         ++it;
     }
-    std::stack<int> s(mstack);
+    std::list<int> s(mstack);
     return 0;
-}
+} */
